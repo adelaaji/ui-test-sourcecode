@@ -1,0 +1,97 @@
+.modal-header {
+  padding-top: 1rem;
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid #e5e7f1;
+  @media screen and (max-width: $break-md) {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+.title-section {
+  flex-grow: 1;
+  @media screen and (max-width: $break-md) {
+    margin-top: 2rem;
+  }
+  h4 {
+    font-size: 2.1rem;
+    font-weight: normal;
+    color: #48465b;
+  }
+
+  .breadcrumb {
+    padding-top: 0.8rem;
+    list-style: none;
+    font-size: 1rem;
+    li {
+      display: inline-block;
+    }
+
+    a,
+    span {
+      color: #a3aacb !important;
+    }
+    a {
+      padding-right: 2rem;
+      margin-right: 1rem;
+      background: url(../images/breadcrumb-icon.svg) right center no-repeat;
+    }
+  }
+}
+.steps-section {
+  padding-top: 0.6rem;
+  flex-grow: 2;
+
+  min-width: 50%;
+  text-align: center;
+
+  .steps-list {
+    li {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: bold;
+
+      margin: 0 2rem;
+      position: relative;
+      @media screen and (max-width: $break-md) {
+        margin: auto;
+        margin-bottom: 0.5rem;
+        display: block;
+        max-width: 20rem;
+      }
+      &:not(:last-child)::after {
+        content: "";
+        width: 0.8rem;
+        height: 0.8rem;
+        position: absolute;
+        right: -2.4rem;
+        top: 0.6rem;
+        background: url(../images/steps-icon.svg) right center no-repeat;
+        @media screen and (max-width: $break-md) {
+          background: none;
+        }
+      }
+      span {
+        padding: 0.6rem;
+        min-width: 8.6rem;
+        border-radius: 1rem;
+        display: block;
+        background-color: #e5e7f1;
+        color: $secondary;
+        &.active {
+          color: $white;
+          background-color: $pink;
+        }
+        &.done {
+          color: $white;
+          background-color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.close-section {
+  text-align: right;
+  flex-grow: 1;
+}

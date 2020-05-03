@@ -1,0 +1,14 @@
+.modal-body {
+  .body-row {
+    padding: 1.4rem 0;
+    //  min-height: 50vh;
+
+    display: flex;
+    @media screen and (max-width: $break-md) {
+      flex-direction: column;
+    }
+  }
+
+  @import "RightSide";
+  @import "LeftSide";
+}

@@ -1,0 +1,21 @@
+{
+  "ticketType": [
+    { "id": 1, "name": "Inquiry", "ticketTypeId": 0 },
+    { "id": 2, "name": "Complain", "ticketTypeId": 0 }
+  ],
+  "issue": [
+    { "id": 1, "name": "A", "ticketTypeId": 1 },
+    { "id": 2, "name": "B", "ticketTypeId": 1 },
+    { "id": 3, "name": "C", "ticketTypeId": 2 },
+    { "id": 4, "name": "D", "ticketTypeId": 2 }
+  ],
+  "agent": [],
+  "ticketStatus": [
+    { "id": 0, "name": "Pending", "ticketTypeId": null },
+    { "id": 0, "name": "first", "ticketTypeId": null },
+    { "id": 0, "name": "second", "ticketTypeId": null },
+    { "id": 0, "name": "third", "ticketTypeId": null },
+    { "id": 0, "name": "Condition", "ticketTypeId": null },
+    { "id": 0, "name": "Completed", "ticketTypeId": null }
+  ]
+}
